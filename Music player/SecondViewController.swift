@@ -26,21 +26,21 @@ class SecondViewController: UIViewController {
     }
     
     @IBAction func Play(_ sender: Any) {
-        if audioPlayer.isPlaying == false
+        if audioStaff == true && audioPlayer.isPlaying == false
         {
             audioPlayer.play()
         }
     }
     
     @IBAction func Pause(_ sender: Any) {
-        if audioPlayer.isPlaying == true
+        if audioStaff == true && audioPlayer.isPlaying == true
         {
             audioPlayer.pause()
         }
     }
     
     @IBAction func Next(_ sender: Any) {
-        if thisSong + 1 != songs.count{
+        if audioStaff == true && thisSong + 1 != songs.count{
             playThis(thisOne: songs[thisSong + 1])
             thisSong += 1
             Label.text = songs[thisSong]
@@ -48,7 +48,7 @@ class SecondViewController: UIViewController {
     }
     
     @IBAction func Prev(_ sender: Any) {
-        if thisSong != 0{
+        if audioStaff == true && thisSong != 0{
             playThis(thisOne: songs[thisSong - 1])
             thisSong -= 1
             Label.text = songs[thisSong]
