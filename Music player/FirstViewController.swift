@@ -11,6 +11,7 @@ import AVFoundation
 
 var songs:[String] = []
 var audioPlayer = AVAudioPlayer()
+var thisSong = 0
 
 class FirstViewController: UIViewController, UITableViewDelegate, UITableViewDataSource{
     
@@ -35,6 +36,7 @@ class FirstViewController: UIViewController, UITableViewDelegate, UITableViewDat
             let audioPath = Bundle.main.path(forResource: songs[indexPath.row], ofType: ".mp3")
             try audioPlayer = AVAudioPlayer(contentsOf: NSURL(fileURLWithPath: audioPath!) as URL)
             audioPlayer.play()
+            thisSong = indexPath.row
         }
         catch{
             print("Error")
