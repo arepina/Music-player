@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5D503E451E43984D00F3E6EC /* cuba.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5D503E411E43984D00F3E6EC /* cuba.mp3 */; };
+		5D503E461E43984D00F3E6EC /* mountains.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5D503E421E43984D00F3E6EC /* mountains.mp3 */; };
+		5D503E471E43984D00F3E6EC /* socium.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5D503E431E43984D00F3E6EC /* socium.mp3 */; };
+		5D503E481E43984D00F3E6EC /* white clothes.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5D503E441E43984D00F3E6EC /* white clothes.mp3 */; };
 		5D7BEEBD1E42531B00A89798 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D7BEEBC1E42531B00A89798 /* AppDelegate.swift */; };
 		5D7BEEBF1E42531B00A89798 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D7BEEBE1E42531B00A89798 /* FirstViewController.swift */; };
 		5D7BEEC11E42531B00A89798 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D7BEEC01E42531B00A89798 /* SecondViewController.swift */; };
@@ -16,6 +20,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5D503E411E43984D00F3E6EC /* cuba.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = cuba.mp3; sourceTree = "<group>"; };
+		5D503E421E43984D00F3E6EC /* mountains.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = mountains.mp3; sourceTree = "<group>"; };
+		5D503E431E43984D00F3E6EC /* socium.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = socium.mp3; sourceTree = "<group>"; };
+		5D503E441E43984D00F3E6EC /* white clothes.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "white clothes.mp3"; sourceTree = "<group>"; };
 		5D7BEEB91E42531B00A89798 /* Music player.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Music player.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5D7BEEBC1E42531B00A89798 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5D7BEEBE1E42531B00A89798 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
@@ -37,6 +45,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5D503E401E43984D00F3E6EC /* Songs */ = {
+			isa = PBXGroup;
+			children = (
+				5D503E411E43984D00F3E6EC /* cuba.mp3 */,
+				5D503E421E43984D00F3E6EC /* mountains.mp3 */,
+				5D503E431E43984D00F3E6EC /* socium.mp3 */,
+				5D503E441E43984D00F3E6EC /* white clothes.mp3 */,
+			);
+			path = Songs;
+			sourceTree = "<group>";
+		};
 		5D7BEEB01E42531B00A89798 = {
 			isa = PBXGroup;
 			children = (
@@ -63,6 +82,7 @@
 				5D7BEEC51E42531B00A89798 /* Assets.xcassets */,
 				5D7BEEC71E42531B00A89798 /* LaunchScreen.storyboard */,
 				5D7BEECA1E42531B00A89798 /* Info.plist */,
+				5D503E401E43984D00F3E6EC /* Songs */,
 			);
 			path = "Music player";
 			sourceTree = "<group>";
@@ -126,9 +146,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5D503E481E43984D00F3E6EC /* white clothes.mp3 in Resources */,
+				5D503E471E43984D00F3E6EC /* socium.mp3 in Resources */,
 				5D7BEEC91E42531B00A89798 /* LaunchScreen.storyboard in Resources */,
+				5D503E451E43984D00F3E6EC /* cuba.mp3 in Resources */,
 				5D7BEEC61E42531B00A89798 /* Assets.xcassets in Resources */,
 				5D7BEEC41E42531B00A89798 /* Main.storyboard in Resources */,
+				5D503E461E43984D00F3E6EC /* mountains.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -303,6 +327,7 @@
 				5D7BEECF1E42531B00A89798 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
